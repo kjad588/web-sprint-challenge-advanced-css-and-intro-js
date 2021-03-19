@@ -299,7 +299,7 @@ function addArtist(array){
     nationality: 'Palestinian',
     bio: 'I am from colorado born and raised'
   } );
-  return array;
+  return array; 
     /*Your Code Here*/
   }
 
@@ -312,8 +312,15 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/){
+function lotsOfArt(array){
   /*Your Code Here*/
+  let resultArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if(artists[i].paintings > 100) {
+      resultArray.push(array[i].name);
+    }
+  }
+  return resultArray;
 }
 
 

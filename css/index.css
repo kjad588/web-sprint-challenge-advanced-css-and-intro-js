@@ -134,3 +134,34 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+
+/* MEDIA QUERIES */
+
+/* PHONE  */
+
+@media(max-width: 500px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        font-size: 3rem;
+    }
+    .title-container div{
+        background-position: center;
+        background-size: stretch;
+        height: 300px;
+    }
+    .artists-container {
+        display: flex;
+        flex-wrap: column wrap;
+        width: 100%;
+    }
+
+    .artis {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+}
+
